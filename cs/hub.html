@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter-Strike Hub</title>
+    <style>
+        @font-face {
+            font-family: 'Counter-Strike';
+            src: url('cs_regular.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Verdana-Bold';
+            src: url('verdana-bold.ttf') format('truetype');
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1c1c1c, #363636);
+            color: white;
+            overflow-x: hidden;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            font-family: 'Counter-Strike', sans-serif;
+            color: #f9c846;
+            font-size: 3.5rem;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        .content {
+            flex: 3;
+            padding: 20px;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        .content h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #f9c846;
+            font-family: 'Counter-Strike', sans-serif;
+        }
+
+        .content p {
+            font-family: 'Verdana-Bold', sans-serif;
+        }
+
+        .sidebar {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .button {
+            font-family: 'Counter-Strike', sans-serif;
+            font-size: 1.5rem;
+            color: #ffffff;
+            background: #f9c846;
+            padding: 15px 25px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+            width: 80%;
+        }
+
+        .button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(255, 255, 0, 0.6);
+        }
+
+        .button:active {
+            transform: translateY(2px);
+            box-shadow: 0 4px 15px rgba(255, 255, 0, 0.3);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #1c1c1c;
+            color: #ffffff;
+            font-size: 0.9rem;
+            margin-top: 20px;
+            font-family: 'Counter-Strike', sans-serif;
+        }
+
+        footer a {
+            color: #f9c846;
+            text-decoration: none;
+        }
+
+        .compete-button {
+            display: inline-block;
+            margin-top: 15px;
+            font-family: 'Counter-Strike', sans-serif;
+            font-size: 1.2rem;
+            color: #ffffff;
+            background: #f9c846;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+        }
+
+        .compete-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(255, 255, 0, 0.6);
+        }
+
+        .compete-button:active {
+            transform: translateY(2px);
+            box-shadow: 0 4px 15px rgba(255, 255, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Welcome to the Counter-Strike Hub
+</header>
+
+<div class="container">
+    <div class="content">
+        <h2>About Counter-Strike</h2>
+        <p>Counter-Strike, a pioneer in the first-person shooter genre, has redefined the gaming landscape through its unique combination of tactical gameplay and team-oriented dynamics. Since its inception, the franchise has consistently set the benchmark for competitive gaming, influencing the development of esports globally.</p>
+        <p>Players are thrust into high-stakes scenarios requiring impeccable coordination, sharp reflexes, and strategic planning. Whether defusing bombs or securing hostages, the game thrives on its immersive environments and complex mechanics that challenge even the most seasoned players.</p>
+        <p>Moreover, Counter-Strike's impact transcends gameplay. It has fostered a robust community of enthusiasts, from amateur players to professional athletes, all contributing to its legacy as a cultural phenomenon. Its frequent updates and extensive map designs ensure a continually evolving experience that remains relevant and engaging across generations.</p>
+        <p>As a testament to its influence, Counter-Strike remains a cornerstone of modern esports, attracting millions of viewers and participants worldwide. Its unparalleled combination of skill-based mechanics and tactical depth has cemented its status as an icon in competitive gaming.</p>
+        <a href="#" class="compete-button">Compete Now</a>
+    </div>
+
+    <div class="sidebar">
+        <!-- Buttons to navigate to other pages, using onclick to open the relevant pages -->
+        <button class="button" onclick="window.location.href='evolution.html';">Evolution</button>
+        <button class="button" onclick="window.location.href='maps.html';">Maps</button>
+        <button class="button" onclick="window.location.href='extras.html';">Extras</button>
+        <button class="button" onclick="window.location.href='esports.html';">Esports</button>
+        <button class="button" onclick="window.location.href='market.html';">Market</button>
+    </div>
+</div>
+
+<footer>
+    Made for champions who never back down.
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS:GO Extras</title>
+    <style>
+        @font-face {
+            font-family: 'Counter-Strike';
+            src: url('cs_regular.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Verdana-Bold';
+            src: url('verdana-bold.ttf') format('truetype');
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1c1c1c, #363636);
+            color: white;
+            overflow-x: hidden;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            font-family: 'Counter-Strike', sans-serif;
+            color: #f9c846;
+            font-size: 3.5rem;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+        }
+
+        .container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        .content {
+            width: 60%; /* Takes 3/5 of the page width */
+            padding: 20px;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            font-family: Arial, sans-serif;
+            color: white;
+            margin-right: 20px; /* Adds space between content and sidebar */
+        }
+
+        .content h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: #f9c846;
+            font-family: 'Counter-Strike', sans-serif;
+        }
+
+        .content p {
+            font-family: 'Verdana-Bold', sans-serif;
+            margin-bottom: 20px;
+        }
+
+        .block {
+            margin-bottom: 40px;
+        }
+
+        .block img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .button {
+            font-family: 'Counter-Strike', sans-serif;
+            font-size: 1.5rem;
+            color: #ffffff;
+            background: #f9c846;
+            padding: 15px 25px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(255, 255, 0, 0.6);
+        }
+
+        .button:active {
+            transform: translateY(2px);
+            box-shadow: 0 4px 15px rgba(255, 255, 0, 0.3);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #1c1c1c;
+            color: #ffffff;
+            font-size: 0.9rem;
+            margin-top: 20px;
+            font-family: 'Counter-Strike', sans-serif;
+        }
+
+        footer a {
+            color: #f9c846;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    CS:GO Extras
+</header>
+
+<div class="container">
+    <div class="content">
+        <div class="block">
+            <h2>Weapon Skins</h2>
+            <img src="skins_example.jpg" alt="Weapon Skins">
+            <p>Weapon skins are a cosmetic feature that allows players to customize their weapons in Counter-Strike. These skins can be earned through in-game drops, traded with other players, or purchased on the Steam Market. Skins come in different qualities, with some being incredibly rare and expensive.</p>
+        </div>
+        <div class="block">
+            <h2>Cases</h2>
+            <img src="cases_example.jpg" alt="Cases">
+            <p>Cases are an essential part of the CS:GO economy, offering players the chance to unlock new skins through opening them with a key. Each case features a collection of skins and, on rare occasions, special items like graffiti or stickers. The rarity of the skins inside varies, with the rarest often costing hundreds of dollars on the market.</p>
+        </div>
+        <div class="block">
+            <h2>Weapon Customization</h2> <!-- Changed title from Trade-ups -->
+            <img src="weapon_customization_example.jpg" alt="Weapon Customization">
+            <p>Weapon customization offers a deeper level of personalization, allowing players to modify their weapon skins with stickers, graffiti, and charms. This customization enhances the player's unique identity within the game while providing additional value through the aesthetics of their weapons.</p>
+        </div>
+        <div class="block">
+            <h2>CS:GO Updates</h2> <!-- Changed title from Market Trends -->
+            <img src="csgo_updates_example.jpg" alt="CS:GO Updates">
+            <p>CS:GO constantly evolves through new updates, featuring changes such as weapon balancing, new skins, and adjustments to game modes. These updates keep the game fresh and encourage players to adapt to new strategies, while also influencing the market's economy by affecting the value of skins and items.</p>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <a href="hub.html" class="button">Back to Hub</a>
+        <a href="maps.html" class="button">Maps</a>
+        <a href="evolution.html" class="button">Evolution</a>
+        <a href="esports.html" class="button">Esports</a>
+        <a href="market.html" class="button">Market</a> <!-- Added Market button -->
+    </div>
+</div>
+
+<footer>
+    Celebrating the extras of Counter-Strike.
+</footer>
+
+</body>
+</html>

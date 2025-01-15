@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS:GO Market</title>
+    <style>
+        @font-face {
+            font-family: 'Counter-Strike';
+            src: url('cs_regular.ttf') format('truetype');
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1c1c1c, #363636);
+            color: white;
+            overflow-x: hidden;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            font-family: 'Counter-Strike', sans-serif;
+            color: #f9c846;
+            font-size: 3.5rem;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+        }
+
+        .market-container {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            padding: 20px;
+            padding-right: 270px; /* Added padding on the right to make space for the sidebar */
+            position: relative;
+        }
+
+        .market-item {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .market-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .market-details {
+            flex: 1;
+        }
+
+        .market-details h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            font-family: 'Counter-Strike', sans-serif;
+            color: #f9c846;
+        }
+
+        .market-details p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .button {
+            font-family: 'Counter-Strike', sans-serif;
+            font-size: 1.5rem;
+            color: #ffffff;
+            background: #f9c846;
+            padding: 15px 25px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+
+        .button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(255, 255, 0, 0.6);
+        }
+
+        .button:active {
+            transform: translateY(2px);
+            box-shadow: 0 4px 15px rgba(255, 255, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    CS:GO Market
+</header>
+
+<div class="market-container">
+    <div class="market-item">
+        <div class="market-details">
+            <h2>Weapon Skin Rarity</h2>
+            <p>In CS:GO, weapon skins are categorized into different rarities. The rarity affects the availability, appearance, and price of skins. Skins can range from consumer-grade (most common) to covert (rare and valuable). For instance, the "AK-47 | Redline" is a classified skin, while the "AWP | Dragon Lore" is covert, and often extremely expensive due to its rarity.</p>
+            <p>Rare skins can sometimes fetch hundreds or even thousands of dollars, depending on demand and condition. Rarity plays a big role in trading, as high-rarity skins attract collectors and investors.</p>
+        </div>
+        <img src="" alt="Weapon Skin Rarity">
+    </div>
+
+    <div class="market-item">
+        <div class="market-details">
+            <h2>Float Value</h2>
+            <p>Float is a numerical value that determines the wear and condition of a skin, ranging from 0.00 (factory new) to 1.00 (battle-scarred). Skins in pristine condition (low float) are generally more valuable than those with higher float values, which appear more worn or damaged.</p>
+            <p>For example, an "AK-47 | Case Hardened" with a low float value may cost significantly more than the same skin with a high float. The float value also affects the visual appearance of the skin, with low float skins looking much cleaner and more vibrant.</p>
+        </div>
+        <img src="" alt="Float Value Example">
+    </div>
+
+    <div class="market-item">
+        <div class="market-details">
+            <h2>Gun Pattern</h2>
+            <p>Some skins in CS:GO have unique patterns that influence their appearance and value. For example, the "AK-47 | Case Hardened" has different patterns with varying colors and designs. Certain patterns are considered more desirable, making them more expensive and sought after by collectors.</p>
+            <p>Additionally, the "M4A4 | Howl" skin is one of the rarest in the game, partly because it was removed from the case after its design was considered controversial. The rarity of the pattern is a significant factor in its value on the market.</p>
+        </div>
+        <img src="" alt="Gun Pattern">
+    </div>
+
+    <div class="market-item">
+        <div class="market-details">
+            <h2>Case Openings and Market Trends</h2>
+            <p>Opening cases in CS:GO is one of the most popular methods for obtaining skins. However, the odds of getting a rare skin are quite low. Players may open multiple cases without getting anything valuable, while others may hit the jackpot with a coveted item.</p>
+            <p>Market trends show that some skins appreciate over time, while others may lose value based on community interest, game updates, or overall demand. Popular skins like the "AWP | Dragon Lore" or "Karambit | Fade" tend to remain valuable, whereas skins from older cases may become less desirable.</p>
+        </div>
+        <img src="" alt="Case Openings and Market Trends">
+    </div>
+
+    <div class="market-item">
+        <div class="market-details">
+            <h2>Trading and Market Place</h2>
+            <p>The Steam Community Market is the primary platform for trading skins in CS:GO. Players can buy, sell, and trade skins using Steam Wallet funds. The market is dynamic, with prices constantly fluctuating based on supply and demand.</p>
+            <p>Traders often monitor the market closely to buy low and sell high, trying to make a profit. Some players also engage in "skin gambling," where they wager skins on third-party sites, hoping to win rare or valuable items.</p>
+        </div>
+        <img src="" alt="Trading and Market Place">
+    </div>
+</div>
+
+<div class="sidebar">
+    <!-- Move "Back to Hub" button to the top -->
+    <a href="hub.html">
+        <button class="button">Back to Hub</button>
+    </a>
+    <a href="evolution.html">
+        <button class="button">Evolution</button>
+    </a>
+    <a href="extras.html">
+        <button class="button">Extras</button>
+    </a>
+    <a href="esports.html">
+        <button class="button">Esports</button>
+    </a>
+    <a href="maps.html">
+        <button class="button">Maps</button> <!-- Changed the Market button to Maps -->
+    </a>
+</div>
+
+</body>
+</html>

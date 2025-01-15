@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS:GO 2 Maps</title>
+    <style>
+        @font-face {
+            font-family: 'Counter-Strike';
+            src: url('cs_regular.ttf') format('truetype');
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1c1c1c, #363636);
+            color: white;
+            overflow-x: hidden;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            font-family: 'Counter-Strike', sans-serif;
+            color: #f9c846;
+            font-size: 3.5rem;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+        }
+
+        .map-container {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            padding: 20px;
+            position: relative;
+        }
+
+        .map {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .map img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .map-details {
+            flex: 1;
+        }
+
+        .map-details h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            font-family: 'Counter-Strike', sans-serif;
+            color: #f9c846;
+        }
+
+        .map-details p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .button {
+            font-family: 'Counter-Strike', sans-serif;
+            font-size: 1.5rem; /* Button size from the Evolution of Counter-Strike code */
+            color: #ffffff;
+            background: #f9c846;
+            padding: 15px 25px; /* Same padding as in the Evolution code */
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(255, 255, 0, 0.6);
+        }
+
+        .button:active {
+            transform: translateY(2px);
+            box-shadow: 0 4px 15px rgba(255, 255, 0, 0.3);
+        }
+
+        /* New styling to move the "Back to Hub" button to the top */
+        .sidebar a:first-child {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    CS:GO 2 Maps
+</header>
+
+<div class="map-container">
+    <div class="map">
+        <div class="map-details">
+            <h2>Dust II</h2>
+            <p>One of the most iconic maps in Counter-Strike history, Dust II is set in a Middle Eastern environment. It is a balanced map offering exciting gameplay for both attackers and defenders.</p>
+            <p>With its simple yet effective layout, Dust II is beloved for its ability to provide endless strategic opportunities and unforgettable matchups.</p>
+            <p>Whether you're holding the bombsite or pushing into enemy territory, Dust II promises a thrilling and intense experience.</p>
+        </div>
+        <img src="" alt="Dust II Map">
+    </div>
+
+    <div class="map">
+        <div class="map-details">
+            <h2>Inferno</h2>
+            <p>Set in a quaint European village, Inferno challenges players with its narrow corridors and strategic chokepoints. Teamwork and precise tactics are essential to dominate this map.</p>
+            <p>Inferno is renowned for its intense firefights and the importance of utility usage to control key areas like Banana and A Site.</p>
+            <p>To succeed, players must master the map's angles and tight corners while communicating effectively with their team.</p>
+        </div>
+        <img src="" alt="Inferno Map">
+    </div>
+
+    <div class="map">
+        <div class="map-details">
+            <h2>Mirage</h2>
+            <p>A desert-themed map with a mix of open spaces and tight corners. Mirage is a favorite among professional players due to its strategic depth and versatility.</p>
+            <p>This map rewards players who can think on their feet and adapt to the dynamic flow of the game.</p>
+            <p>Mirage features one of the most balanced layouts in the game, where both teams can execute complex strategies or engage in high-speed firefights.</p>
+        </div>
+        <img src="" alt="Mirage Map">
+    </div>
+
+    <div class="map">
+        <div class="map-details">
+            <h2>Nuke</h2>
+            <p>Nuke takes players to a high-stakes industrial facility. With its multi-level design and vertical gameplay, it offers a unique challenge for strategic minds.</p>
+            <p>Mastering the transitions between the upper and lower bombsites is crucial to success on this map.</p>
+            <p>The intense vertical gameplay on Nuke demands precise coordination and quick decision-making under pressure.</p>
+        </div>
+        <img src="" alt="Nuke Map">
+    </div>
+
+    <div class="map">
+        <div class="map-details">
+            <h2>Overpass</h2>
+            <p>A map that combines urban and industrial elements, Overpass rewards strategic planning and team coordination. Its dynamic environment keeps players engaged throughout.</p>
+            <p>Overpass stands out for its emphasis on map control and the ability to outmaneuver opponents with clever plays.</p>
+            <p>Take control of key areas like A Long and B Connector to dominate the map and secure victory.</p>
+        </div>
+        <img src="" alt="Overpass Map">
+    </div>
+</div>
+
+<div class="sidebar">
+    <!-- "Back to Hub" button moved to the top -->
+    <a href="hub.html">
+        <button class="button">Back to Hub</button>
+    </a>
+    <a href="evolution.html">
+        <button class="button">Evolution</button>
+    </a>
+    <a href="extras.html">
+        <button class="button">Extras</button>
+    </a>
+    <a href="esports.html">
+        <button class="button">Esports</button>
+    </a>
+    <a href="market.html">
+        <button class="button">Market</button>
+    </a>
+</div>
+
+</body>
+</html>
