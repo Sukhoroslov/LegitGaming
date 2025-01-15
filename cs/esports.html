@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter-Strike Esports</title>
+    <style>
+        @font-face {
+            font-family: 'Counter-Strike';
+            src: url('cs_regular.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Verdana-Bold';
+            src: url('verdana-bold.ttf') format('truetype');
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1c1c1c, #363636);
+            color: white;
+            overflow-x: hidden;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            font-family: 'Counter-Strike', sans-serif;
+            color: #f9c846;
+            font-size: 3.5rem;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+        }
+
+        .container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        .content {
+            width: 60%;
+            padding: 20px;
+            font-size: 1.2rem;
+            line-height: 1.8;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        .content h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: #f9c846;
+            font-family: 'Counter-Strike', sans-serif;
+        }
+
+        .content img {
+            width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .content p {
+            font-family: 'Verdana-Bold', sans-serif;
+            margin-bottom: 20px;
+        }
+
+        .block {
+            margin-bottom: 40px;
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .button {
+            font-family: 'Counter-Strike', sans-serif;
+            font-size: 1.5rem;
+            color: #ffffff;
+            background: #f9c846;
+            padding: 15px 25px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(255, 255, 0, 0.6);
+        }
+
+        .button:active {
+            transform: translateY(2px);
+            box-shadow: 0 4px 15px rgba(255, 255, 0, 0.3);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #1c1c1c;
+            color: #ffffff;
+            font-size: 0.9rem;
+            margin-top: 20px;
+            font-family: 'Counter-Strike', sans-serif;
+        }
+
+        footer a {
+            color: #f9c846;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Counter-Strike Esports
+</header>
+
+<div class="container">
+    <div class="content">
+        <div class="block">
+            <h2>The Beginnings</h2>
+            <img src="16lan.png" alt="The Beginnings of Counter-Strike">
+            <p>Counter-Strike's journey into esports began in the early 2000s, with grassroots tournaments organized by passionate communities. These local events were fueled by dedication and pure love for the game, attracting players from around the world to compete in LAN parties and small-scale competitions. Over time, organizations like CPL (Cyberathlete Professional League) and WCG (World Cyber Games) recognized Counter-Strike's potential as a competitive platform, hosting more structured and larger-scale tournaments.</p>
+            <p>This era laid the groundwork for professional gaming, with innovative strategies and iconic moments defining the competitive scene. Counter-Strike became more than just a game; it transformed into a cultural phenomenon that bridged players across different regions, setting the stage for modern esports to flourish.</p>
+        </div>
+        <div class="block">
+            <h2>Legendary Players</h2>
+            <img src="f0rest.png" alt="f0rest">
+            <p><strong>f0rest:</strong> A cornerstone of Counter-Strike history, f0rest has dazzled fans with his consistency and raw skill since the 1.6 days. Known for his versatile playstyle, he adapted seamlessly to different iterations of the game, always staying relevant in the competitive scene. His longevity and commitment to excellence serve as an inspiration to many aspiring players, solidifying his status as a true legend of Counter-Strike.</p>
+            <p>Beyond his technical prowess, f0rest is also celebrated for his charismatic personality and sportsmanship. From his early days with Ninjas in Pyjamas to his continued presence in the scene, he has been a pillar of the Counter-Strike community, embodying the spirit of competitive gaming.</p>
+            <img src="coldzera.png" alt="coldzera">
+            <p><strong>coldzera:</strong> Known for his clutch plays and highlight moments, coldzera rose to prominence during the CS:GO era, winning multiple major MVP awards. His iconic 4k with the AWP on Mirage against Team Liquid remains one of the most celebrated moments in Counter-Strike history. Coldzera's ability to thrive under pressure and deliver in critical situations made him a key player for teams like Luminosity Gaming and SK Gaming.</p>
+            <p>As a tactical genius and consistent performer, coldzera redefined what it means to be a star player. His dedication and hard work inspired many players to emulate his calculated and methodical approach to the game.</p>
+            <img src="s1mple.png" alt="s1mple">
+            <p><strong>s1mple:</strong> Widely regarded as one of the greatest of all time, s1mple's incredible aim and versatility continue to redefine excellence in CS2 esports. Whether it's clutching impossible rounds or delivering jaw-dropping plays, s1mple has consistently raised the bar for individual performance in competitive Counter-Strike.</p>
+            <p>His journey from a young prodigy to a seasoned champion is a testament to his resilience and passion for the game. Representing organizations like Natus Vincere, s1mple's dominance in the scene has earned him multiple awards, including Major MVP honors. Fans and analysts alike often refer to him as the benchmark for greatness in esports.</p>
+        </div>
+        <div class="block">
+            <h2>The Current Scene</h2>
+            <img src="cs2esports.png" alt="The Current Counter-Strike Scene">
+            <p>With the release of Counter-Strike 2, esports has reached new heights. International tournaments like the CS2 Majors attract millions of viewers, with prize pools exceeding millions of dollars. These events showcase world-class talent, advanced strategies, and the passion of both players and fans, cementing Counter-Strike's place as a premier esport.</p>
+            <p>The professional scene has evolved significantly, with players and teams now supported by dedicated coaching staff, analysts, and state-of-the-art facilities. Organizations invest heavily in player development and infrastructure, leading to a level of professionalism previously unseen in the industry. Counter-Strike 2 has also introduced new mechanics and visuals, enhancing the viewing experience for fans worldwide.</p>
+            <p>As the community grows, the spirit of Counter-Strike remains alive through grassroots tournaments, fan engagement, and the shared love for the game. The future of Counter-Strike esports is brighter than ever, with its legacy continuing to inspire a new generation of players and fans.</p>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <a href="hub.html" class="button">Back to Hub</a>
+        <a href="maps.html" class="button">Maps</a>
+        <a href="extras.html" class="button">Extras</a>
+        <a href="evolution.html" class="button">Evolution</a>
+    </div>
+</div>
+
+<footer>
+    Celebrating the competitive spirit of Counter-Strike.
+</footer>
+
+</body>
+</html>
