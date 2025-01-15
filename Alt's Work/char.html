@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outlast - Meet the Characters</title>
+    <style>
+        @font-face {
+            font-family: 'Fright Night';
+            src: url('Fright Night.ttf') format('truetype'),
+                 url('Fright Night.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Base 02';
+            src: url('Base 02.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'Fright Night', serif;
+            background-color: #1c1f23;
+            color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #23272a;
+            color: #ff6347;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: #f5f5f5;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            padding: 12px 25px;
+            display: inline-block;
+            border-radius: 5px;
+            background-color: #333333;
+            transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ff6347;
+            background-color: #e0e0e0;
+            transform: translateY(-5px);
+        }
+        main {
+            padding: 30px;
+            line-height: 1.8;
+        }
+        .intro {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .intro h2 {
+            color: #ff6347;
+            margin-bottom: 20px;
+            font-size: 32px;
+        }
+        .intro p {
+            font-size: 16px;
+            color: #dcdcdc;
+            font-family: 'Base 02', sans-serif;
+        }
+        .character-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
+        }
+        .character-card {
+            background-color: #2a2e35;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease;
+        }
+        .character-card:hover {
+            transform: translateY(-5px);
+        }
+        .character-name {
+            font-size: 22px;
+            color: #ff6347;
+            margin-bottom: 10px;
+            font-family: 'Fright Night', serif;
+        }
+        .character-description {
+            font-size: 16px;
+            color: #dcdcdc;
+            font-family: 'Base 02', sans-serif;
+        }
+        footer {
+            background: #23272a;
+            color: #bbb;
+            text-align: center;
+            padding: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Outlast - Meet the Characters</h1>
+        <nav>
+            <a href="hub.html">Home</a>
+            <a href="gameplay.html">Gameplay</a>
+            <a href="maps.html">Maps</a>
+            <a href="lore.html">Lore</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="intro">
+            <h2>The Cast of Nightmares</h2>
+            <p>Outlast introduces you to a chilling roster of characters, each with their own dark backstory and disturbing motives. Get to know the people (and things) that roam Mount Massive Asylum, and the tragic fates they suffered at the hands of Murkoff's twisted experiments.</p>
+        </div>
+
+        <div class="character-container">
+            <div class="character-card">
+                <h3 class="character-name">Miles Upshur</h3>
+                <p class="character-description">An investigative journalist who arrives at Mount Massive Asylum to uncover the truth behind a mysterious tip. Armed only with a night vision camera, Miles must evade dangerous inmates and uncover the horrific secrets of the facility.</p>
+            </div>
+
+            <div class="character-card">
+                <h3 class="character-name">Chris Walker</h3>
+                <p class="character-description">A hulking, deformed former soldier, Chris Walker relentlessly hunts down anyone in the asylum. His strength and violence make him a terrifying adversary as you try to escape his deadly grasp.</p>
+            </div>
+
+            <div class="character-card">
+                <h3 class="character-name">Richard Trager</h3>
+                <p class="character-description">A sadistic former doctor who once worked at the asylum. Known for his grotesque experiments and terrifying methods, Trager is a grotesque reflection of the horrors Murkoff has inflicted on the patients of Mount Massive.</p>
+            </div>
+
+            <div class="character-card">
+                <h3 class="character-name">The Walrider</h3>
+                <p class="character-description">A horrifying supernatural entity created as a result of the experiments conducted by Murkoff. The Walrider is a shadowy and almost invincible force, haunting the corridors of the asylum with its twisted appearance and unrelenting pursuit of intruders.</p>
+            </div>
+
+            <div class="character-card">
+                <h3 class="character-name">Dr. Rudolf Wernicke</h3>
+                <p class="character-description">The mastermind behind the horrific experiments at Mount Massive Asylum. Dr. Wernicke was once a brilliant scientist, but his thirst for knowledge led him to abandon ethics, giving rise to the monstrous entities that now haunt the asylum.</p>
+            </div>
+
+            <div class="character-card">
+                <h3 class="character-name">Father Martin Archimbaud</h3>
+                <p class="character-description">A patient who believes he is the prophet of a divine mission. Father Martin’s cryptic guidance lures Miles deeper into the asylum, all while pushing the boundaries of faith, madness, and survival.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Outlast Chronicles | A Fan Project to Preserve the Horror</p>
+    </footer>
+</body>
+</html>
