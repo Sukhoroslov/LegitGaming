@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuphead Characters</title>
+    <style>
+        @font-face {
+            font-family: 'funk';
+            src: url('funk.ttf') format('truetype'),
+                 url('funk.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'head';
+            src: url('cuphead.ttf') format('truetype');
+        }
+        @font-face {
+            font-family: 'kla';
+            src: url('bsb.ttf') format('truetype'),
+                 url('bsb.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body {
+            font-family: 'kla', sans-serif;
+            background-color: #f7e1a0;
+            color: #8b0000;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            font-family: funk;
+            background-color: #ff4e50;
+            color: white;
+            padding: 20px;
+            font-size: 2.5em;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        .nav-button {
+            font-family: funk;
+            background-color: #8b0000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .nav-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+        }
+        section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0 15%;
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        img {
+            width: 150px;
+            max-width: 100%;
+            margin: 20px 0;
+            display: block;
+        }
+        .horizontal-line {
+            position: absolute;
+            width: 100%;
+            height: 10px;
+            background-color: #d14042;
+            margin: 0;
+        }
+        .side-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            background-color: white;
+        }
+        .circle-button {
+            width: 40px;
+            height: 40px;
+            background-color: #8b0000;
+            border-radius: 50%;
+            margin: 20px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        .circle-button img {
+            width: 60%;
+            height: 60%;
+            object-fit: cover;
+        }
+        article {
+            margin: 20px 0;
+            padding: 20px;
+            border: 2px solid #8b0000;
+            border-radius: 10px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        article h2 {
+            font-family: funk;
+            color: #8b0000;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .character {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 800px;
+            text-align: left;
+        }
+        h6 {
+            font-family: head;
+            color: #333;
+            font-size: 1.5em;
+            text-align: center;
+            flex: 1;
+        }
+        .character h3 {
+            font-family: funk;
+            color: #8b0000;
+            font-size: 1.5em;
+            text-align: center;
+            flex: 1;
+        }
+        .character img {
+            flex: 0 0 auto;
+            margin-left: 20px;
+        }
+        .character p {
+            flex: 2;
+            margin-right: 20px;
+            font-size: 1em;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Cuphead Characters
+    </header>
+    <div class="horizontal-line"></div>
+    <div class="side-bar">
+        <div class="circle-button">
+            <img src="hom.png" alt="Button Icon">
+        </div>
+    </div>
+    <nav>
+        <button class="nav-button" onclick="navigate('main.html')">Main</button>
+        <button class="nav-button" onclick="navigate('history.html')">History</button>
+        <button class="nav-button" onclick="navigate('other.html')">Other</button>
+        <button class="nav-button" onclick="navigate('characters.html')">Characters</button>
+    </nav>
+    <section>
+        <article>
+            <h2>Main Characters</h2>
+            <h6>Cuphead</h6>
+            <div class="character">
+                <p>Cuphead is the titular character of the game. Known for his reckless nature and his deep desire to win big, he often finds himself in tricky situations. His adventures lead him into dangerous territory as he faces off against a series of challenging bosses.</p>
+                <img src="cuphead.png" alt="Cuphead">
+            </div>
+            <h6>Mugman</h6>
+            <div class="character">
+                <p>Mugman is Cuphead's loyal brother and a voice of reason. While Cuphead charges ahead with reckless abandon, Mugman is more cautious, often trying to get his brother to think things through before jumping into a challenge.</p>
+                <img src="mugman.png" alt="Mugman">
+            </div>
+        </article>
+
+        <article>
+            <h2>Side Characters</h2>
+            <h6>Elder Kettle</h6>
+            <div class="character">
+                <p>Elder Kettle is a wise and caring figure who looks after Cuphead and Mugman. He provides them with advice and support, guiding them through their adventures. He's a mentor-like figure, always concerned for their well-being.</p>
+                <img src="elderkettle.png" alt="Elder Kettle">
+            </div>
+            <h6>Mrs. Chalice</h6>
+            <div class="character">
+                <p>Ms. Chalice is a lively new character introduced in *The Delicious Last Course* DLC. She plays a key role in helping Cuphead and Mugman by offering unique abilities when players equip the Astral Cookie charm. Once a ghost, her goal is to return to the living world, adding depth to the trio's adventure.</p>
+                <img src="woman.png" alt="The Chalice">
+            </div>
+        </article>
+
+        <article>
+            <h2>Villains</h2>
+            <h6>The Root Pack</h6>
+            <div class="character">
+                <p>A trio of anthropomorphic vegetables: Sal Spudder, Ollie Bulb, and Chauncey. They’re the first bosses players encounter, offering a playful yet challenging introduction to the game’s mechanics. From spitting projectiles to underground attacks, they set the tone for Cuphead’s creative boss battles.</p>
+                <img src="rp.png" alt="The rots">
+            </div>
+            <h6>Goopy Le Grande</h6>
+            <div class="character">
+                <p>This gelatinous blue blob is a literal bouncing challenge. Inspired by classic cartoon characters, Goopy evolves through phases, growing larger and more menacing, even returning as a gravestone in his final form. His simplicity hides a deceptively tricky rhythm to master.</p>
+                <img src="glg.png" alt="The ball">
+            </div>
+            <h6>Ribby and Croaks</h6>
+            <div class="character">
+                <p>These feisty frog brothers bring a dynamic tag-team fight. Ribby punches, Croaks spits fireflies, and together they unleash a slot-machine phase. Their battle captures the essence of teamwork and keeps players on their toes with unpredictable patterns.</p>
+                <img src="rac.png" alt="The toads">
+            </div>
+            <h6>Hilda Berg</h6>
+            <div class="character">
+                <p>A menacing zeppelin, Hilda Berg introduces players to Cuphead’s aerial battles. With her astrology-themed transformations and whirlwind attacks, she’s a chaotic force to contend with. Her laugh echoes the mischievous spirit of early cartoons.</p>
+                <img src="hb.png" alt="The zep">
+            </div>
+            <h6>Cagney Carnation</h6>
+            <div class="character">
+                <p>A seemingly cheerful flower, Cagney’s fight takes a darker turn with his rapid transformations and unpredictable attacks. From spitting seeds to summoning roots, his garden arena feels alive with danger and whimsy.</p>
+                <img src="cc.png" alt="The flowey">
+            </div>
+            <h6>Baroness Von Bon Bon</h6>
+            <div class="character">
+                <p>This candy-themed villain is as sweet as she is deadly. With a rotating cast of confectionery minions and her castle firing projectiles, she tests both reflexes and patience. Her design oozes classic cartoon charm.</p>
+                <img src="bvbb.png" alt="The bon">
+            </div>
+            <h6>Djimmi the Great</h6>
+            <div class="character">
+                <p>A magical genie, Djimmi takes players on a surreal aerial adventure filled with puppet minions, treasure, and unpredictable spells. His fight is a true spectacle, blending mystical themes with inventive mechanics.</p>
+                <img src="dg.png" alt="The geynie">
+            </div>
+            <h6>Beppy the Clown</h6>
+            <div class="character">
+                <p>This manic clown brings chaos to his circus-themed battle. From bumper cars to a carousel horse, his attacks escalate in creativity, challenging players to keep up with the carnival mayhem.</p>
+                <img src="bc.png" alt="The clown">
+            </div>
+            <h6>Wally Warbles</h6>
+            <div class="character">
+                <p>A cranky bird, Wally Warbles defends his nest in a fast-paced aerial fight. With his chick sidekick and egg projectiles, the battle captures the absurdity and intensity of Cuphead’s design.</p>
+                <img src="ww.png" alt="The berd">
+            </div>
+            <h6>Grim Matchstick</h6>
+            <div class="character">
+                <p>A fire-breathing dragon, Grim Matchstick delivers one of the game’s most challenging fights. Players must dodge fireballs, avoid tail swipes, and navigate a cloud-filled arena in this unforgettable showdown.</p>
+                <img src="gm.png" alt="The cig">
+            </div>
+            <h6>Rumor Honeybottoms</h6>
+            <div class="character">
+                <p>This queen bee reigns over a hive of hazards. With her summoning minions and transforming into deadly shapes, she pushes players to adapt to her honeycomb arena’s vertical design.</p>
+                <img src="rh.png" alt="The bottom">
+            </div>
+            <h6>Captain Brineybeard</h6>
+            <div class="character">
+                <p>A salty sea captain with a loyal ship, Brineybeard combines nautical chaos with clever attacks. His shark, squid, and barrel minions add layers of unpredictability to this seafaring brawl.</p>
+                <img src="cb.png" alt="The salty">
+            </div>
+            <h6>Werner Werman</h6>
+            <div class="character">
+                <p>A crafty rat in a tin can, Werner turns a junkyard into a battlefield. From launching projectiles to unleashing a cat, his fight captures Cuphead’s humor and challenge.</p>
+                <img src="wewe.png" alt="The rat">
+            </div>
+            <h6>Dr. Kahl's Robot</h6>
+            <div class="character">
+                <p>A towering mechanical menace, this robot’s fight is packed with explosions, lasers, and high stakes. Inspired by retro sci-fi, it’s one of the game’s most intense and visually stunning battles.</p>
+                <img src="dkr.png" alt="The bot">
+            </div>
+            <h6>Sally Stageplay</h6>
+            <div class="character">
+                <p>This theatrical diva takes players on a journey through her life—literally. Her fight occurs on a stage, with each phase representing a new act. It’s a clever and uniquely cinematic experience.</p>
+                <img src="ss.png" alt="The diva">
+            </div>
+            <h6>Phantom Express</h6>
+            <div class="character">
+                <p>A haunted train, this battle features ghosts, skeletons, and a relentless, creepy locomotive. The shifting cart mechanics keep players constantly on the move in this thrilling encounter.</p>
+                <img src="pe.png" alt="The train">
+            </div>
+            <h6>Cala Maria</h6>
+            <div class="character">
+                <p>A stunning yet dangerous sea siren, Cala Maria uses her hypnotic charm and underwater allies to create chaos. Her transformation into a stone Medusa adds a challenging twist to her fight.</p>
+                <img src="cm.png" alt="The shrimp">
+            </div>
+            <h6>King Dice</h6>
+            <div class="character">
+                <p>The penultimate boss, King Dice, is a gambler’s nightmare. Players must roll the dice to navigate a board filled with mini-bosses before facing him directly. His fight is a true test of skill and endurance.</p>
+                <img src="cd.png" alt="The dice">
+            </div>
+            <h6>The Devil</h6>
+            <div class="character">
+                <p>The Devil is the main antagonist of the game. He is the one who Cuphead and Mugman make a deal with, which leads them on their perilous journey to collect the souls of the bosses they defeat. A cunning and manipulative figure, he aims to trap them in his infernal schemes.</p>
+                <img src="devil.png" alt="The Devil">
+            </div>
+
+        </article>
+    </section>
+    <script>
+        function navigate(page) {
+            window.location.href = page;
+        }
+    </script>
+    <footer>
+        Made for sweaty tryhards.
+    </footer>
+</body>
+</html>
