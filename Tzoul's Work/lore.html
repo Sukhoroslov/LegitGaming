@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Rivals - Lore</title>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <style>
+        /* Font face for Thunderbolt */
+        @font-face {
+            font-family: 'Thunderbolt';
+            src: url('ThunderboltRegular-8MV8M.ttf') format('truetype'),
+                 url('ThunderboltRegular-BWVBB.otf') format('opentype');
+        }
+
+        /* Font face for Avengero */
+        @font-face {
+            font-family: 'Avengero';
+            src: url('AvengeroRegular-zvgl.ttf') format('truetype'),
+                 url('AvengeroRegular-zvgl.otf') format('opentype');
+        }
+
+        body {
+            font-family: 'Russo One', sans-serif;
+            background-color: #0d47a1; /* Blue background */
+            color: #e1e1e1;
+            text-align: center;
+            margin: 0;
+        }
+        header {
+            background-color: #1a1a1a;
+            padding: 40px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 50px;
+            color: #F3D03A;
+            font-family: 'Thunderbolt', sans-serif;
+        }
+        nav a {
+            margin: 15px;
+            color: #FFFFFF;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 22px;
+        }
+        nav a:hover {
+            color: #F3D03A;
+            background-color: #222;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .greeting {
+            margin-top: 20px;
+            font-size: 26px;
+            color: #F3D03A;
+            font-weight: 600;
+        }
+        .main-content {
+            padding: 30px;
+        }
+        /* Applying Avengero font to all section headers */
+        .main-content h2, .main-content h3 {
+            font-family: 'Avengero', sans-serif;
+        }
+        .lore-description {
+            margin-top: 40px;
+            font-size: 20px;
+            line-height: 1.8;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            color: #ddd;
+        }
+
+        /* Bouncy Button Styles */
+        .button-container {
+            margin-top: 40px;
+        }
+        .button {
+            display: inline-block;
+            margin: 20px;
+            padding: 15px 30px;
+            background-color: #F3D03A;
+            color: #000;
+            text-decoration: none;
+            font-size: 22px;
+            border-radius: 8px;
+            transition: transform 0.2s ease;
+        }
+        .button:hover {
+            transform: translateY(-10px);
+            animation: bounce 0.5s ease infinite alternate;
+        }
+
+        /* Bouncy Effect */
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+
+        footer {
+            background-color: #0d47a1; /* Blue footer background */
+            padding: 20px;
+            color: #fff; /* White text */
+            font-size: 18px;
+        }
+        .footer-text {
+            font-size: 20px;
+            color: #fff; /* White text */
+            font-weight: bold;
+        }
+        .footer-subtext {
+            font-size: 16px;
+            color: #fff; /* White text */
+            margin-top: 10px;
+        }
+    </style>
+    <script>
+        function displayGreeting() {
+            const hours = new Date().getHours();
+            let greeting;
+            if (hours < 12) {
+                greeting = "Rise and shine, hero! Ready to save the multiverse?";
+            } else if (hours < 18) {
+                greeting = "Hey there, champion! Time to make the universe proud!";
+            } else {
+                greeting = "The night is yours, warrior! Let's take down some villains!";
+            }
+            document.getElementById("greeting").textContent = greeting;
+        }
+        window.onload = displayGreeting;
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Marvel Rivals: Lore of the Multiverse</h1>
+        <p id="greeting" class="greeting"></p>
+    </header>
+    <main class="main-content">
+        <h2>The Origin of Marvel Rivals</h2>
+        <div class="lore-description">
+            <p>Marvel Rivals was born from the very fabric of the multiverse itself. It began as an experiment by an unknown cosmic entity, seeking to test the resolve and power of the greatest heroes and villains from all across the Marvel Universe. This entity, known as the Watcher, manipulated the timelines and realities, pulling iconic characters from different dimensions, timelines, and worlds. The result was the formation of the ultimate battleground—the world of Marvel Rivals.</p>
+
+            <p>Within this dimension, heroes and villains were forced into epic battles where alliances, rivalries, and betrayals took shape. The rules were simple: the most powerful combatants would dominate the multiverse. The game wasn't just about power, but about the very spirit of the characters. It became a proving ground where heroes and villains alike had to fight for their survival, often forced to question their very purpose and allegiance.</p>
+
+            <h3>The Watcher's Role</h3>
+            <p>The Watcher, a cosmic being tasked with observing the multiverse without interference, found himself inadvertently drawing the most powerful beings together for a colossal showdown. However, as the battles unfolded, the Watcher began to realize that this experiment was no longer merely about observation—it was about discovering which hero or villain could rise to the challenge and reshape the future of all worlds. It was a test of ideals, abilities, and the inner strength of those involved.</p>
+
+            <h3>Multiple Realms, One Battle</h3>
+            <p>Marvel Rivals introduces players to a host of diverse realms—each a unique environment where specific rules apply. These realms are constantly shifting and evolving, mirroring the volatility of the multiverse itself. Some places, like the Asgardian realm, are filled with mythical energy, while others, such as the futuristic Wakanda, combine advanced technology with ancient traditions. These realms provide diverse challenges and environments that test not only the physical strength of characters but their adaptability in battle.</p>
+
+            <h3>The Heroes and Villains</h3>
+            <p>In the world of Marvel Rivals, the line between hero and villain is often blurred. The players are tasked with assembling teams from a variety of characters—heroes such as Spider-Man, Captain America, Thor, and Black Panther, as well as villains like Loki, Thanos, and Ultron. Each character comes with unique abilities, motivations, and backgrounds, contributing to the rich lore of the game.</p>
+
+            <h3>The Great Conflict</h3>
+            <p>At the heart of the game lies a conflict between two major factions: the defenders of the multiverse, seeking to maintain peace and justice, and the disruptors, who aim to challenge the order and bring chaos to all realities. As the game progresses, the conflict deepens, and the stakes grow higher—will the defenders succeed in their mission, or will the disruptors tear apart the multiverse as we know it?</p>
+        </div>
+        <div class="button-container">
+            <a href="hub.html" class="button">Home</a> <!-- Home Button -->
+            <a href="gameplay.html" class="button">Learn the Gameplay</a>
+            <a href="characters.html" class="button">Meet the Heroes</a>
+            <a href="maps.html" class="button">Explore the Maps</a>
+            <a href="others.html" class="button">Others</a>
+        </div>
+    </main>
+    <footer>
+        <p class="footer-text">© 2025 Marvel Fan Community | Universe's Mightiest Legends</p>
+        <p class="footer-subtext">All Rights Reserved | Unleashing Heroes, One Battle at a Time</p>
+    </footer>
+</body>
+</html>

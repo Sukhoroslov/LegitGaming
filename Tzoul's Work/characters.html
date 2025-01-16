@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Rivals - Characters</title>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <style>
+        /* Font face for Thunderbolt */
+        @font-face {
+            font-family: 'Thunderbolt';
+            src: url('ThunderboltRegular-8MV8M.ttf') format('truetype'),
+                 url('ThunderboltRegular-BWVBB.otf') format('opentype');
+        }
+
+        /* Font face for Avengero */
+        @font-face {
+            font-family: 'Avengero';
+            src: url('AvengeroRegular-zvgl.ttf') format('truetype'),
+                 url('AvengeroRegular-zvgl.otf') format('opentype');
+        }
+
+        body {
+            font-family: 'Russo One', sans-serif;
+            background-color: #0d47a1; /* Blue background */
+            color: #e1e1e1;
+            text-align: center;
+            margin: 0;
+        }
+        header {
+            background-color: #1a1a1a;
+            padding: 40px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 50px;
+            color: #F3D03A;
+            font-family: 'Thunderbolt', sans-serif;
+        }
+        nav a {
+            margin: 15px;
+            color: #FFFFFF;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 22px;
+        }
+        nav a:hover {
+            color: #F3D03A;
+            background-color: #222;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .greeting {
+            margin-top: 20px;
+            font-size: 26px;
+            color: #F3D03A;
+            font-weight: 600;
+        }
+        .main-content {
+            padding: 30px;
+        }
+        .characters-description {
+            margin-top: 40px;
+            font-size: 20px;
+            line-height: 1.8;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            color: #ddd;
+        }
+        .character {
+            margin-bottom: 40px;
+        }
+        /* Applying Avengero font to character names */
+        .character h3 {
+            color: #F3D03A;
+            font-size: 26px;
+            font-family: 'Avengero', sans-serif;
+        }
+        .character p {
+            font-size: 18px;
+        }
+
+        /* Bouncy Button Styles */
+        .button-container {
+            margin-top: 40px;
+        }
+        .button {
+            display: inline-block;
+            margin: 20px;
+            padding: 15px 30px;
+            background-color: #F3D03A;
+            color: #000;
+            text-decoration: none;
+            font-size: 22px;
+            border-radius: 8px;
+            transition: transform 0.2s ease;
+        }
+        .button:hover {
+            transform: translateY(-10px);
+            animation: bounce 0.5s ease infinite alternate;
+        }
+
+        /* Bouncy Effect */
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+
+        footer {
+            background-color: #0d47a1; /* Blue footer background */
+            padding: 20px;
+            color: #fff; /* White text */
+            font-size: 18px;
+        }
+        .footer-text {
+            font-size: 20px;
+            color: #fff; /* White text */
+            font-weight: bold;
+        }
+        .footer-subtext {
+            font-size: 16px;
+            color: #fff; /* White text */
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Marvel Rivals: Meet the Heroes</h1>
+        <p id="greeting" class="greeting"></p>
+    </header>
+    <main class="main-content">
+        <h2>Meet the Legendary Heroes</h2>
+        <div class="characters-description">
+            <p>Marvel Rivals features an ever-expanding roster of heroes and villains from all corners of the Marvel Universe. Each character comes with their own unique abilities, strengths, and personality, contributing to a dynamic and ever-changing battlefield. Below are just a few of the most iconic characters you can play in the game. Get ready to meet some of the finest champions and the deadliest adversaries!</p>
+
+            <div class="character">
+                <h3>Iron Man (Tony Stark)</h3>
+                <p><strong>Role:</strong> Ranged Attacker / Strategist</p>
+                <p><strong>Abilities:</strong> Iron Man can deploy energy blasts, fly with his jet boots, and unleash powerful weaponry from his suit. His ultimate ability, "Repulsor Barrage," fires a barrage of energy beams, dealing massive area damage.</p>
+            </div>
+
+            <div class="character">
+                <h3>Black Widow (Natasha Romanoff)</h3>
+                <p><strong>Role:</strong> Stealth / Melee Combatant</p>
+                <p><strong>Abilities:</strong> Black Widow excels at stealth and agility. She can use her "Widow's Bite" for powerful electrical attacks, as well as employ her "Tactical Assault" for devastating melee strikes. She’s perfect for ambushing enemies and escaping danger.</p>
+            </div>
+
+            <div class="character">
+                <h3>Captain America (Steve Rogers)</h3>
+                <p><strong>Role:</strong> Tank / Leader</p>
+                <p><strong>Abilities:</strong> Captain America is a master tactician and defensive powerhouse. With his shield, he can block attacks, deflect projectiles, and throw it for long-range strikes. His "Shield Slam" ability creates a shockwave, stunning enemies in a radius.</p>
+            </div>
+
+            <div class="character">
+                <h3>Thor (Thor Odinson)</h3>
+                <p><strong>Role:</strong> Tank / Ranged Attacker</p>
+                <p><strong>Abilities:</strong> Thor’s power comes from Mjolnir, his enchanted hammer. He can summon lightning with "Thunderstrike," and his "God of Thunder" ability summons a powerful storm, dealing massive damage to enemies within its range.</p>
+            </div>
+
+            <div class="character">
+                <h3>Spider-Man (Peter Parker)</h3>
+                <p><strong>Role:</strong> Agile Attacker / Support</p>
+                <p><strong>Abilities:</strong> Spider-Man uses his webbing to trap enemies, swing around the battlefield, and dodge incoming attacks with acrobatic agility. His "Web Bomb" ability incapacitates enemies in a wide radius, making him great for crowd control.</p>
+            </div>
+
+            <div class="character">
+                <h3>Hulk (Bruce Banner)</h3>
+                <p><strong>Role:</strong> Tank / Melee Damage</p>
+                <p><strong>Abilities:</strong> The Hulk's raw strength makes him a formidable opponent. He can unleash his "Smash" ability to deal heavy area damage, and his "Rage Mode" increases his damage and resistance, making him unstoppable for a short time.</p>
+            </div>
+
+            <div class="character">
+                <h3>Doctor Strange (Stephen Strange)</h3>
+                <p><strong>Role:</strong> Support / Ranged Attacker</p>
+                <p><strong>Abilities:</strong> Doctor Strange uses his magical abilities to protect and heal allies, as well as damage enemies. His "Mystic Arts" ability creates barriers, and his "Time Manipulation" can slow or stop time temporarily to gain the upper hand.</p>
+            </div>
+
+            <div class="character">
+                <h3>Black Panther (T'Challa)</h3>
+                <p><strong>Role:</strong> Agile Attacker / Stealth</p>
+                <p><strong>Abilities:</strong> Black Panther uses his enhanced senses and Vibranium suit for stealth and speed. His "Vibranium Claws" ability deals quick, lethal strikes, and his "Panther's Roar" ability boosts allies' speed and damage in the area.</p>
+            </div>
+
+            <div class="character">
+                <h3>Scarlet Witch (Wanda Maximoff)</h3>
+                <p><strong>Role:</strong> Ranged Attacker / Crowd Control</p>
+                <p><strong>Abilities:</strong> Scarlet Witch can manipulate reality itself, causing confusion and chaos. Her "Chaos Magic" ability distorts enemies' attacks, and her "Hex Blast" ability can target multiple enemies, dealing significant damage over time.</p>
+            </div>
+
+            <div class="character">
+                <h3>Winter Soldier (Bucky Barnes)</h3>
+                <p><strong>Role:</strong> Stealth / Ranged Damage</p>
+                <p><strong>Abilities:</strong> Winter Soldier, with his cybernetic arm and sharpshooting skills, is an excellent ranged attacker and infiltrator. His "Metal Arm Crush" ability stuns enemies and deals high damage, and his "Assassin's Strike" allows him to eliminate foes swiftly from a distance.</p>
+            </div>
+        </div>
+        <div class="button-container">
+            <a href="hub.html" class="button">Home</a> <!-- New Home button -->
+            <a href="gameplay.html" class="button">Learn the Gameplay</a>
+            <a href="lore.html" class="button">Discover the Lore</a>
+            <a href="maps.html" class="button">Explore the Maps</a>
+            <a href="others.html" class="button">Others</a>
+        </div>
+    </main>
+    <footer>
+        <p class="footer-text">© 2025 Marvel Fan Community | Universe's Mightiest Legends</p>
+        <p class="footer-subtext">All Rights Reserved | Unleashing Heroes, One Battle at a Time</p>
+    </footer>
+</body>
+</html>

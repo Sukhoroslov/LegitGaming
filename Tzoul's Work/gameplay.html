@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Rivals - Gameplay</title>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <style>
+        /* Font face for Thunderbolt */
+        @font-face {
+            font-family: 'Thunderbolt';
+            src: url('ThunderboltRegular-8MV8M.ttf') format('truetype'),
+                 url('ThunderboltRegular-BWVBB.otf') format('opentype');
+        }
+
+        /* Font face for Avengero */
+        @font-face {
+            font-family: 'Avengero';
+            src: url('AvengeroRegular-zvgl.ttf') format('truetype'),
+                 url('AvengeroRegular-zvgl.otf') format('opentype');
+        }
+
+        body {
+            font-family: 'Russo One', sans-serif;
+            background-color: #0d47a1; /* Blue background */
+            color: #e1e1e1;
+            text-align: center;
+            margin: 0;
+        }
+
+        header {
+            background-color: #1a1a1a;
+            padding: 40px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 50px;
+            color: #F3D03A;
+            font-family: 'Thunderbolt', sans-serif;
+        }
+
+        nav a {
+            margin: 15px;
+            color: #FFFFFF;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 22px;
+        }
+
+        nav a:hover {
+            color: #F3D03A;
+            background-color: #222;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .greeting {
+            margin-top: 20px;
+            font-size: 26px;
+            color: #F3D03A;
+            font-weight: 600;
+        }
+
+        .main-content {
+            padding: 30px;
+        }
+
+        .gameplay-info {
+            margin-top: 40px;
+            font-size: 20px;
+            line-height: 1.8;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            color: #ddd;
+        }
+
+        h2, h3 {
+            font-family: 'Avengero', sans-serif;
+            color: #F3D03A;
+        }
+
+        h2 {
+            font-size: 36px;
+        }
+
+        h3 {
+            font-size: 26px;
+        }
+
+        /* Bouncy Button Styles */
+        .button-container {
+            margin-top: 40px;
+        }
+
+        .button {
+            display: inline-block;
+            margin: 20px;
+            padding: 15px 30px;
+            background-color: #F3D03A;
+            color: #000;
+            text-decoration: none;
+            font-size: 22px;
+            border-radius: 8px;
+            transition: transform 0.2s ease;
+        }
+
+        .button:hover {
+            transform: translateY(-10px);
+            animation: bounce 0.5s ease infinite alternate;
+        }
+
+        /* Bouncy Effect */
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+
+        footer {
+            background-color: #0d47a1; /* Blue footer background */
+            padding: 20px;
+            color: #fff; /* White text */
+            font-size: 18px;
+        }
+
+        .footer-text {
+            font-size: 20px;
+            color: #fff; /* White text */
+            font-weight: bold;
+        }
+
+        .footer-subtext {
+            font-size: 16px;
+            color: #fff; /* White text */
+            margin-top: 10px;
+        }
+    </style>
+    <script>
+        function displayGreeting() {
+            const hours = new Date().getHours();
+            let greeting;
+            if (hours < 12) {
+                greeting = "Rise and shine, hero! Ready to save the multiverse?";
+            } else if (hours < 18) {
+                greeting = "Hey there, champion! Time to make the universe proud!";
+            } else {
+                greeting = "The night is yours, warrior! Let's take down some villains!";
+            }
+            document.getElementById("greeting").textContent = greeting;
+        }
+        window.onload = displayGreeting;
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Marvel Rivals: A New Era of Heroes</h1>
+        <p id="greeting" class="greeting"></p>
+    </header>
+    <main class="main-content">
+        <h2>Gameplay - The Battle for the Multiverse</h2>
+        <div class="gameplay-info">
+            <p>Marvel Rivals brings together iconic heroes and villains from across the multiverse for epic battles and legendary showdowns. Your objective: strategically build your team and engage in epic battles to determine the fate of the multiverse. Here's an in-depth look at the gameplay:</p>
+
+            <h3>Hero Abilities and Combat</h3>
+            <p>Each character in Marvel Rivals comes equipped with a unique set of abilities designed to enhance their playstyle and complement team tactics. Here's a breakdown of how abilities work:</p>
+            <ul>
+                <li><strong>Active Abilities:</strong> These are the primary powers each character can use in battle, such as Spider-Man's web-slinging or Iron Man's repulsor blasts. Each hero or villain has a signature move that defines their role in the team.</li>
+                <li><strong>Ultimate Abilities:</strong> These powerful, game-changing abilities can turn the tide of battle. Examples include Captain Marvel's photon blast or Hulk's seismic smash. Ultimate abilities require building up a power meter during the fight.</li>
+                <li><strong>Passive Abilities:</strong> These abilities provide strategic advantages during combat. For instance, Black Panther's enhanced agility allows him to evade attacks, while Thor’s passive ability allows him to heal himself with each successful strike.</li>
+            </ul>
+
+            <h3>Team Composition and Roles</h3>
+            <p>Your team in Marvel Rivals is crucial to your success. Building the right balance of heroes and villains will determine your playstyle. Here’s a quick overview of different roles:</p>
+            <ul>
+                <li><strong>Tank:</strong> Characters like Hulk or Thor serve as tanks. These heroes absorb damage and protect the rest of the team.</li>
+                <li><strong>DPS (Damage Dealer):</strong> Damage Dealers like Captain America or Iron Man are the backbone of your offensive strategy, delivering high damage and taking out enemies swiftly.</li>
+                <li><strong>Support:</strong> Characters like Doctor Strange or Scarlet Witch provide crucial buffs, healing, and crowd control to support the team.</li>
+                <li><strong>Control:</strong> These heroes manipulate the battlefield with abilities that can disable or disrupt opponents. Characters like Scarlet Witch or Loki excel at this role.</li>
+            </ul>
+
+            <h3>Game Modes</h3>
+            <p>Marvel Rivals features several exciting game modes to keep you engaged:</p>
+            <ul>
+                <li><strong>Campaign Mode:</strong> Experience an epic story where heroes from across the multiverse join forces to battle against powerful foes. Each chapter introduces new challenges and iconic Marvel locations.</li>
+                <li><strong>Multiplayer Mode:</strong> Test your skills against other players online. Whether you’re teaming up with friends or battling for the top spot, this mode offers endless fun and competition.</li>
+                <li><strong>Free Play:</strong> Enjoy a relaxed experience by fighting against AI-controlled teams. Perfect for practicing new strategies or just having fun.</li>
+            </ul>
+        </div>
+        <div class="button-container">
+            <a href="hub.html" class="button">Home</a> <!-- Home Button -->
+            <a href="lore.html" class="button">Explore the Lore</a>
+            <a href="characters.html" class="button">Meet the Heroes</a>
+            <a href="maps.html" class="button">Explore the Maps</a>
+            <a href="others.html" class="button">Others</a>
+        </div>
+    </main>
+    <footer>
+        <p class="footer-text">© 2025 Marvel Fan Community | Universe's Mightiest Legends</p>
+        <p class="footer-subtext">All Rights Reserved | Unleashing Heroes, One Battle at a Time</p>
+    </footer>
+</body>
+</html>
