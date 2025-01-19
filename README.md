@@ -14,8 +14,9 @@ they can find what they’re looking for in as few clicks as possible.
 5. Types Of Games: MMO/FPS/Horror/2D Platforming/Survival
 6. What Makes a video game special
 7. Lists of games we need to discuss about each category:
-a) Destiny 2
+a) Marvel Rivals
 b) Counter Strike 2
-c) Silent Hill
+c) Outlast
 d) Sonic
-e) Minecraft
+e) Fortnite
+f) CupHead
