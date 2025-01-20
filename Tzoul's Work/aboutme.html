@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Marvel Rivals</title>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'Thunderbolt';
+            src: url('ThunderboltRegular-8MV8M.ttf') format('truetype'),
+                 url('ThunderboltRegular-BWVBB.otf') format('opentype');
+        }
+
+        body {
+            font-family: 'Russo One', sans-serif;
+            background-color: #0d47a1;
+            color: #e1e1e1;
+            text-align: center;
+            margin: 0;
+        }
+        header {
+            background-color: #1a1a1a;
+            padding: 40px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 50px;
+            color: #F3D03A;
+            font-family: 'Thunderbolt', sans-serif;
+        }
+        nav a {
+            margin: 15px;
+            color: #FFFFFF;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 22px;
+        }
+        nav a:hover {
+            color: #F3D03A;
+            background-color: #222;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .main-content {
+            padding: 30px;
+        }
+        .main-content h2 {
+            font-family: 'Thunderbolt', sans-serif;
+            color: #F3D03A;
+        }
+        .about-description {
+            margin-top: 20px;
+            font-size: 20px;
+            line-height: 1.8;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            color: #ddd;
+        }
+
+        .button-container {
+            margin-top: 40px;
+        }
+        .button {
+            display: inline-block;
+            margin: 20px;
+            padding: 15px 30px;
+            background-color: #F3D03A;
+            color: #000;
+            text-decoration: none;
+            font-size: 22px;
+            border-radius: 8px;
+            transition: transform 0.2s ease;
+        }
+        .button:hover {
+            transform: translateY(-10px);
+            animation: bounce 0.5s ease infinite alternate;
+        }
+
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+
+        footer {
+            background-color: #0d47a1;
+            padding: 20px;
+            color: #fff;
+            font-size: 18px;
+        }
+        .footer-text {
+            font-size: 20px;
+            color: #fff;
+            font-weight: bold;
+        }
+        .footer-subtext {
+            font-size: 16px;
+            color: #fff;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Me</h1>
+    </header>
+    <main class="main-content">
+        <h2>Welcome to My Marvel Rivals Page!</h2>
+        <p class="about-description">
+            Hello, my name is Georgios Tzoulakitze and I am an undergraduate student from City College of York and I have a passion for coding, reading comics and exploring new things.
+        </p>
+        <div class="button-container">
+            <a href="index.html" class="button">Home</a>
+            <a href="gameplay.html" class="button">Gameplay</a>
+            <a href="lore.html" class="button">Lore</a>
+            <a href="characters.html" class="button">Characters</a>
+            <a href="maps.html" class="button">Maps</a>
+        </div>
+    </main>
+    <footer>
+        <p class="footer-text">© 2025 Marvel Fan Community | Universe's Mightiest Legends</p>
+        <p class="footer-subtext">All Rights Reserved | Unleashing Heroes, One Battle at a Time</p>
+    </footer>
+</body>
+</html>
