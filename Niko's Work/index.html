@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <title>Sonic Platform Games</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1>Welcome to Sonic!</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Sonic</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="games.html">Platform Games</a></li>
+                <li><a href="maps.html">Maps</a></li>
+                <li><a href="about me.html">About Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+            <!--AI-Generated Text-->
+            <h2>Experience the Thrill of Speed with Sonic!</h2>
+            <p>Jump into the fast-paced world of Sonic the Hedgehog! With his lightning speed and signature blue color, Sonic has captured the hearts of gamers around the world since 1991. Get ready for a platform gaming adventure that's filled with action, loops, and colorful worlds.</p>
+            <!--End of AI-Generated Text-->
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Sonic Game Series!(Made by Nikolaos Tsatsanidis)</p>
+        <div style="text-align: center; margin-top: 40px;">
+            <img src="..\NIKOLAOS TSATSANIDIS HTML/images/Sonic Gif 1.gif" style="width: 1920px; height: 1080px"></a>
+        </div>
+    </footer>
+    <script>
+        const cursor = document.createElement('div');
+        cursor.classList.add('cursor-effect');
+        document.body.appendChild(cursor);
+
+        document.addEventListener('mousemove', (e) => {
+            const { clientX: x, clientY: y } = e;
+            cursor.style.left = `${x}px`;
+            cursor.style.top = `${y}px`;
+        });
+    </script>
+</body>
+</html>

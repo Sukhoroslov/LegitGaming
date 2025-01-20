@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+    <title>Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1>Sonic Gallery</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Sonic</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="games.html">Platform Games</a></li>
+                <li><a href="maps.html">Maps</a></li>
+                <li><a href="about me.html">About Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="image-gallery">
+            <h2>Images of Sonic</h2>
+            <div class="gallery">
+                <img src="..\NIKOLAOS TSATSANIDIS HTML/images/Sonic Gif 2.gif"></a>
+                <img src="..\NIKOLAOS TSATSANIDIS HTML/images/Sonic photo Pose 1.png"></a>
+                <img src="..\NIKOLAOS TSATSANIDIS HTML/images/Sonic 1.png"></a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Sonic Game Series!(Made by Nikolaos Tsatsanidis)</p>
+    </footer>
+    <script>
+        const cursor = document.createElement('div');
+        cursor.classList.add('cursor-effect');
+        document.body.appendChild(cursor);
+
+        document.addEventListener('mousemove', (e) => {
+            const { clientX: x, clientY: y } = e;
+            cursor.style.left = `${x}px`;
+            cursor.style.top = `${y}px`;
+        });
+    </script>
+</body>
+</html>

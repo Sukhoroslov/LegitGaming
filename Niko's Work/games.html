@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<head>
+    <title>Platform Games</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #ff4500, #1e90ff);
+            color: #fff;
+            text-align: center;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+        .games-info, .sonic-games {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        .games-info ul, .sonic-games ul {
+            list-style: none;
+            padding: 0;
+        }
+        .games-info ul li, .sonic-games ul li {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+        footer {
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Platform Games</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Sonic</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="games.html">Platform Games</a></li>
+                <li><a href="maps.html">Maps</a></li>
+                <li><a href="about me.html">About Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="games-info">
+            <h2>What is a Platform Game?</h2>
+            <!--AI-Generated Text-->
+            <p>Platform games are one of the most enduring genres in video games. Players control characters who run, jump, and climb through environments, avoiding traps and enemies.</p>
+            <ul>
+                <li><strong>Super Mario</strong> – The most iconic platformer series, featuring power-ups and classic levels.</li>
+                <li><strong>Donkey Kong</strong> – One of the earliest platformers, introducing climbing and barrel-dodging mechanics.</li>
+                <li><strong>Sonic the Hedgehog</strong> – A game-changer in platforming with speed-focused gameplay.</li>
+            </ul>
+        </section>
+        <section class="sonic-games">
+            <h2>Popular Sonic Games</h2>
+            <ul>
+                <li><strong>Sonic the Hedgehog (1991)</strong> – The game that started it all, introducing loops and speed-based gameplay.</li>
+                <li><strong>Sonic CD (1993)</strong> – A time-travel adventure featuring animated cutscenes.</li>
+                <li><strong>Sonic Adventure (1998)</strong> – The first 3D Sonic game, setting the stage for modern platformers.</li>
+                <li><strong>Sonic Mania (2017)</strong> – A critically acclaimed return to 2D platforming.</li>
+                <li><strong>Sonic Frontiers (2022)</strong> – A fresh take on open-world exploration and high-speed action.</li>
+                <!--End of AI-Generated Text-->
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Sonic Game Series!(Made by Nikolaos Tsatsanidis)</p>
+    </footer>
+</body>
+</html>

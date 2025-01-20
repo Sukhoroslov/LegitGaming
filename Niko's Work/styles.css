@@ -1,0 +1,116 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg, #1e90ff, #ff6347);
+    color: #fff;
+    overflow-x: hidden;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.7);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ffd700;
+}
+
+.intro {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.intro h2 {
+    font-size: 2.5rem;
+    text-shadow: 2px 2px #000;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.intro p {
+    max-width: 800px;
+    margin: 20px auto;
+    line-height: 1.8;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+     { opacity: 0; }
+     { opacity: 1; }
+}
+
+@keyframes slideIn {
+     { transform: translateY(20px); opacity: 0; }
+     { transform: translateY(0); opacity: 1; }
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.gallery img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.cursor-effect {
+    position: fixed;
+    pointer-events: none;
+    width: 15px;
+    height: 15px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.cursor-effect:hover {
+    transform: scale(2);
+    background: #ff6347;
+}
